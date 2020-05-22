@@ -10,54 +10,6 @@ namespace bessel
 {
 
 template<typename T>
-T cyl_j0( T _z )
-{
-    // Implementation from C++17
-    return std::cyl_bessel_j(0, _z);
-}
-
-template<typename T>
-std::complex<T> cyl_j0( std::complex<T> _z )
-{
-
-    if ( std::real(_z) < T(0) )
-    {
-        _z = -_z; // Since J0(-z) = J0(z)
-    }
-    
-    // Note: for 5 <= x <= 20, the routine does not reach
-    //  sufficient digits of accuracy for long double type,
-    //  although it does reach sufficient digits for
-    //  float (6 digits) and double (15 digits).
-
-    if ( std::abs(_z) == T(0) )
-    {
-        return std::complex<T> (T(1), T(0));
-    }
-    else if ( std::real(_z) <= T(12) )
-    {
-        return __cyl_j0_ascending_series( _z );
-    }
-    else if ( std::real(_z) <= T(50) )
-    {
-        return __cyl_j0_semiconvergent_series( _z, 12 );
-    }
-    else if ( std::real(_z) <= T( 1000 ) )
-    {
-        return __cyl_j0_semiconvergent_series( _z,  6 );
-    }
-    else if ( std::real(_z) <= T( 25000 ) )
-    {
-        return __cyl_j0_semiconvergent_series( _z,  3 );
-    }
-    else
-    {
-        return __cyl_j0_semiconvergent_series( _z,  1 );
-    }
-
-}
-
-template<typename T>
 std::complex<T> __cyl_j0_ascending_series( const std::complex<T> _z )
 {
     // Ascending Series from G. N. Watson 'A treatise on the
@@ -106,6 +58,54 @@ std::complex<T> __cyl_j0_semiconvergent_series(
 
     return T(C_1_SQRTPI) * ( cos(_z)*(P-Q) + sin(_z)*(P+Q) ) / sqrt( _z );
     
+}
+
+template<typename T>
+T cyl_j0( T _z )
+{
+    // Implementation from C++17
+    return std::cyl_bessel_j(0, _z);
+}
+
+template<typename T>
+std::complex<T> cyl_j0( std::complex<T> _z )
+{
+
+    if ( std::real(_z) < T(0) )
+    {
+        _z = -_z; // Since J0(-z) = J0(z)
+    }
+    
+    // Note: for 5 <= x <= 20, the routine does not reach
+    //  sufficient digits of accuracy for long double type,
+    //  although it does reach sufficient digits for
+    //  float (6 digits) and double (15 digits).
+
+    if ( std::abs(_z) == T(0) )
+    {
+        return std::complex<T> (T(1), T(0));
+    }
+    else if ( std::real(_z) <= T(12) )
+    {
+        return __cyl_j0_ascending_series( _z );
+    }
+    else if ( std::real(_z) <= T(50) )
+    {
+        return __cyl_j0_semiconvergent_series( _z, 12 );
+    }
+    else if ( std::real(_z) <= T( 1000 ) )
+    {
+        return __cyl_j0_semiconvergent_series( _z,  6 );
+    }
+    else if ( std::real(_z) <= T( 25000 ) )
+    {
+        return __cyl_j0_semiconvergent_series( _z,  3 );
+    }
+    else
+    {
+        return __cyl_j0_semiconvergent_series( _z,  1 );
+    }
+
 }
 
 }
