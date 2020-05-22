@@ -15,7 +15,7 @@ Recursos disponíveis
 - Função cilíndrica de Bessel de ordem zero para argumentos reais e compexos, *J*<sub>0</sub>(*z*);
   - `bessel::cyl_j0(z)`
 
-Recursos em desenvolvimento:
+Recursos em desenvolvimento
 - Função cilíndrica de Bessel de ordem inteira para argumentos reais e compexos, *J<sub>n</sub>*(*z*);
 
 ## Accuracy
@@ -30,4 +30,4 @@ Para <nobr>Re{*z*} > 20</nobr>, `bessel::cyl_j0(z)` depende fortemente da precis
 
 ## Licensing
 
-Este projeto está protegito sob a licensa <a href="https://github.com/jodesarro/bessel/blob/master/LICENSE">MIT License</a> e tem [@jodesarro]( https://github.com/jodesarro ) como seu principal autor.
+Este projeto está protegido sob a licensa <a href="https://github.com/jodesarro/bessel/blob/master/LICENSE">MIT License</a> e tem [@jodesarro]( https://github.com/jodesarro ) como seu principal autor.
