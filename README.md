@@ -1,13 +1,13 @@
-# Bessel functions <img src="https://github.com/jodesarro/bessel/blob/master/cyl_j0.gif" height=30px>
+# Bessel functions <img src="https://github.com/jodesarro/bessel-library/blob/master/cyl-j0.gif" height=30px>
 
-<p align="right"><a href="https://github.com/jodesarro/bessel/blob/master/README.pt-br.md">Leia isto em português</a></p>
+<p align="right"><a href="https://github.com/jodesarro/bessel-library/blob/master/README.pt-br.md">Leia isto em português</a></p>
 
 A C++ library with routines to evaluate Bessel functions for real or complex arguments.
 
 ## How to use
 
-The library is in a header-only library style, i.e., there is nothing to build, you only have to include the *bessel.hpp* file to your project.
-See <a href="https://github.com/jodesarro/bessel/blob/master/usage_example.cpp">usage_example.cpp</a> as an example of usage.
+The library is in a header-only library style, i.e., there is nothing to build, you only have to include the *bessel-library.hpp* file to your project.
+See <a href="https://github.com/jodesarro/bessel-library/blob/master/usage-example.cpp">usage-example.cpp</a> as an example of usage.
 
 ## Features
 
@@ -30,4 +30,4 @@ For <nobr>Re{*z*} > 20</nobr>, `bessel::cyl_j0(z)` strongly depends on the accur
 
 ## Licensing
 
-This project is protected under <a href="https://github.com/jodesarro/bessel/blob/master/LICENSE">MIT License</a> and [@jodesarro]( https://github.com/jodesarro ) is the principal author.
+This project is protected under <a href="https://github.com/jodesarro/bessel-library/blob/master/LICENSE">MIT License</a> and [@jodesarro]( https://github.com/jodesarro ) is the principal author.

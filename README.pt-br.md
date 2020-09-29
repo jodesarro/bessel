@@ -1,13 +1,13 @@
-# Funções de Bessel <img src="https://github.com/jodesarro/bessel/blob/master/cyl_j0.gif" height=30px>
+# Funções de Bessel <img src="https://github.com/jodesarro/bessel-library/blob/master/cyl-j0.gif" height=30px>
 
-<p align="right"><a href="https://github.com/jodesarro/bessel/blob/master/README.md">Read this in english</a></p>
+<p align="right"><a href="https://github.com/jodesarro/bessel-library/blob/master/README.md">Read this in english</a></p>
 
 Uma biblioteca em C++ com rotinas para calcular as funções de Bessel para argumentos reais ou complexos.
 
 ## Como usar
 
-A bibliotea está em estilo *header-only* (apenas cabeçalho), ou seja, não é necessário compilá-la separadamente, você só precisa incluir o arquivo *bessel.hpp* no seu projeto.
-Veja <a href="https://github.com/jodesarro/bessel/blob/master/usage_example.cpp">usage_example.cpp</a> como exemplo de uso.
+A bibliotea está em estilo *header-only* (apenas cabeçalho), ou seja, não é necessário compilá-la separadamente, você só precisa incluir o arquivo *bessel-library.hpp* no seu projeto.
+Veja <a href="https://github.com/jodesarro/bessel-library/blob/master/usage-example.cpp">usage-example.cpp</a> como exemplo de uso.
 
 ## Recursos
 
@@ -30,4 +30,4 @@ Para <nobr>Re{*z*} > 20</nobr>, `bessel::cyl_j0(z)` depende fortemente da precis
 
 ## Licensing
 
-Este projeto está protegido sob a licensa <a href="https://github.com/jodesarro/bessel/blob/master/LICENSE">MIT License</a> e tem [@jodesarro]( https://github.com/jodesarro ) como seu principal autor.
+Este projeto está protegido sob a licensa <a href="https://github.com/jodesarro/bessel-library/blob/master/LICENSE">MIT License</a> e tem [@jodesarro]( https://github.com/jodesarro ) como seu principal autor.
