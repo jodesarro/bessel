@@ -1,6 +1,6 @@
 # Funções de Bessel <img src="https://github.com/jodesarro/bessel-library/blob/master/cyl-j0.gif" height=30px>
 
-<p align="right"><a href="https://github.com/jodesarro/bessel-library/blob/master/README.md">Read this in english</a></p>
+<p align="right"><a href="https://github.com/jodesarro/bessel-library/blob/master/README.md">Read this in English</a></p>
 
 Uma biblioteca em C++ com rotinas para calcular as funções de Bessel para argumentos reais ou complexos.
 
