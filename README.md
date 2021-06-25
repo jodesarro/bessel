@@ -1,6 +1,6 @@
 # Bessel functions <img src="https://github.com/jodesarro/bessel-library/blob/master/cyl-j0.gif" height=30px>
 
-<p align="right"><a href="https://github.com/jodesarro/bessel-library/blob/master/README.pt-br.md">Leia isto em português</a></p>
+<p align="right"><a href="https://github.com/jodesarro/bessel-library/blob/master/README.pt-br.md">Leia isto em Português</a></p>
 
 A C++ library with routines to evaluate Bessel functions for real or complex arguments.
 
